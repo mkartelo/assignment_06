@@ -1,7 +1,7 @@
-Write your reflection here.
+In this assignment, I learned how to connect Python to different AI APIs and use the responses to analyze customer reviews. One thing I understand better now is the difference between sending form data with `data=` and JSON with `json=` when making POST requests. I also learned why `raise_for_status()` is important because it helps identify API errors right away instead of having them cause problems later in the code.
 
-See reflection.md for what makes a good reflection — be specific, use the
-terminology from this assignment (REST API, endpoint, HTTP status code,
-raise_for_status, API key, form data vs. JSON body, rate limit, caching,
-json_normalize, record_path, meta, grain, opinion mining, named-entity
-recognition, prompt, system prompt, reasoning model), and make it actionable.
+The part I found most challenging was working with nested JSON, especially in `opinions_table`. It took more effort to understand how targets and assessments were connected through references and how to use nested loops to turn that information into rows in a DataFrame. I also had to correct errors involving column names, which showed me how important it is to check the structure of the data rather than assume what a column is called.
+
+Another thing I learned was how caching makes working with APIs more efficient. Instead of sending the same requests every time, the program saves the responses and reuses them. I also got more practice using pandas functions like `json_normalize`, `merge`, `concat`, and `pivot_table` to organize and summarize data. Building the Streamlit page helped me understand how all the separate functions work together to create something a user can interact with.
+
+Going forward, I want to practice working with nested JSON without relying as heavily on examples. I also want to get better at debugging errors by reading test results and tracing them back to the specific function causing the problem. I think this would help me become more independent when working on projects that involve multiple APIs and data processing steps.
